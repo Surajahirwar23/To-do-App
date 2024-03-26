@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;  
+    background-color: #43476E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color: #121215;
+    width: 80%;
+    height: 90vh;
+    border-radius: 15px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    position: relative;
+    
+}
+.container{
+    width: 80%;
+    height: 86%;
+    background-color: #18181C;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    top: 58px;
+ 
+}
+
+.container h6{
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    color: #aeacac;
+}
+p{
+    font-weight: 700;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: -10px;
+    left: 10%;
+
+
+}
+p span{
+    color: #8A64FC;
+    margin-left: -9px;  
+}
+
+.headerContainer{
+    max-width:  60%;
+    height: 38px;
+    background:#2E2D35 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; 
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+}
+.headerContainer input{
+    width: 100%;
+    height: 100%;
+    padding: 8px 15px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 2px;
+    background-color: #2E2D35;
+    color: #888;
+}
+.headerContainer button{
+    font-size: 1.1rem;
+    height: 100%;
+    min-width: 70px;
+    text-align: center;
+    padding: 8px 3px;
+    background-color: #6246C0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.todoContainer{
+    width: 82%;
+    background-color: #18181C;
+    margin-top: 90px;
+    height: 80%;
+    overflow: auto;
+    scrollbar-color: #888 #f1f1f1;
+    border-radius: 10px;
+
+}
+.todoContainer::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.todoContainer::-webkit-scrollbar-track {
+    background: #4c4b4b;
+}
+
+.todoContainer::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 6px; 
+}
+
+.todoContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.todoContainer h5{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.todoContainer ul{
+    width: 100%;
+     display: flex; 
+     scroll-behavior: smooth;
+     padding: 1rem;
+
+     
+}
+.todoContainer h{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.todoContainer button{
+    padding: 4px 7px;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+}.todoContainer button:nth-child(1){
+    background-color: #8A64FC;
+}
+
+
+
+.link-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.4rem 1rem;
+    background: #1e1d23;
+  
+
+}
+.inp_text{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    color: rgb(168, 160, 160);
+}
+.inp_text h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #b9b4b4;
+  
+}
+.inp_text input{
+    width: 15px;
+    height: 15px;
+}
+            
+                                /* MEDIA QUERY FOR PAD DEVICES */
+
+@media screen and (max-width: 870px) {
+  .main{
+    width: 95%;
+  }
+  .container{
+    width: 90%;
+  }
+  .todoContainer{
+    height: 62vh;
+  }
+  .buttons button{
+    font-size: 0.9rem;
+}
+.headerContainer{
+    max-width:  60%;
+    height: 35px;
+   
+}
+.inp_text h1{
+    font-size: 1rem;
+    font-weight: 500;
+  
+}
+.todoContainer{
+    margin-top: 80px;
+ 
+
+}
+  }
+
+
+                                    /* MEDIA QUERY FOR MOBILE-PHONE DEVICES */
+
+
+
+@media screen and (max-width: 500px) {
+
+  .buttons button{
+    font-size: 0.7rem;
+}
+.headerContainer{
+    max-width:  70%;
+    height: 30px;
+   
+}
+.headerContainer button{
+    font-size: 0.8rem;
+    height: 100%;
+    min-width: 55px;
+    text-align: center;
+    padding: 5px 2px;
+}
+.inp_text h1{
+    font-size: 0.9rem;
+    font-weight: 400;
+  
+}
+
+}
+  
